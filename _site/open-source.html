@@ -14,7 +14,7 @@
           content="Welcome to Aaditya Thakkar's web-space!">
 
     <link rel="canonical" href="http://localhost:4000/open-source.html">
-    <link rel="alternate" type="application/rss+xml" title="Aaditya Thakkar" href="http://localhost:4000/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Aaditya's webspace" href="http://localhost:4000/feed.xml">
 
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -95,7 +95,7 @@
             <div id="jumbotron-meta-info">
                 <h1>Open Source Projects</h1>
                 <span class="meta-info">
-                    I have <span class="repo-count badge">21</span> projects on Github
+                    I have <span class="repo-count badge"></span> projects on Github
                 </span>
             </div>
         </div>
@@ -332,35 +332,6 @@
                             <span data-toggle="tooltip" class="meta-info" title="Last updated：2015-12-21 12:12:50 UTC">
                                 <span class="octicon octicon-clock"></span>
                                 <time datetime="2015-12-21 12:12:50 UTC" title="2015-12-21 12:12:50 UTC">2015-12-21</time>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 card text-center">
-                <div class="thumbnail">
-                    <div class="card-image geopattern" data-pattern-id="my_webspace">
-                        <div class="card-image-cell">
-                            <h3 class="card-title">
-                                <a href="https://github.com/aaditya-thakkar/my_webspace" target="_blank">my_webspace</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="caption">
-                        <div class="card-description">
-                            <p class="card-text"></p>
-                        </div>
-                        <div class="card-text">
-                            <span data-toggle="tooltip" class="meta-info" title="0 stars">
-                                <span class="octicon octicon-star"></span> 0
-                            </span>
-                            <span data-toggle="tooltip" class="meta-info" title="0 forks">
-                                <span class="octicon octicon-git-branch"></span> 0
-                            </span>
-                            <span data-toggle="tooltip" class="meta-info" title="Last updated：2016-06-11 21:49:44 UTC">
-                                <span class="octicon octicon-clock"></span>
-                                <time datetime="2016-06-11 21:49:44 UTC" title="2016-06-11 21:49:44 UTC">2016-06-11</time>
                             </span>
                         </div>
                     </div>
@@ -688,6 +659,35 @@
             
             <div class="col-md-4 card text-center">
                 <div class="thumbnail">
+                    <div class="card-image geopattern" data-pattern-id="Yummy-Jekyll-master">
+                        <div class="card-image-cell">
+                            <h3 class="card-title">
+                                <a href="https://github.com/aaditya-thakkar/Yummy-Jekyll-master" target="_blank">Yummy-Jekyll-master</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="caption">
+                        <div class="card-description">
+                            <p class="card-text"></p>
+                        </div>
+                        <div class="card-text">
+                            <span data-toggle="tooltip" class="meta-info" title="0 stars">
+                                <span class="octicon octicon-star"></span> 0
+                            </span>
+                            <span data-toggle="tooltip" class="meta-info" title="0 forks">
+                                <span class="octicon octicon-git-branch"></span> 0
+                            </span>
+                            <span data-toggle="tooltip" class="meta-info" title="Last updated：2016-06-12 12:35:35 UTC">
+                                <span class="octicon octicon-clock"></span>
+                                <time datetime="2016-06-12 12:35:35 UTC" title="2016-06-12 12:35:35 UTC">2016-06-12</time>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 card text-center">
+                <div class="thumbnail">
                     <div class="card-image geopattern" data-pattern-id="tiny-shell">
                         <div class="card-image-cell">
                             <h3 class="card-title">
@@ -725,7 +725,7 @@
         // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
 
-        $('.geopattern').each(function(){
+        $('.card-image').each(function(){
             $(this).geopattern($(this).data('pattern-id'));
         });
 

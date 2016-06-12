@@ -18,7 +18,8 @@
 }
 
 .jumbotron {
-    background-image: url("../images/blackorchid/blackorchid/blackorchid.png");
+  background-image: background-color: #000000;
+  background-image: url("http://www.transparenttextures.com/patterns/dark-wood.png");
 }
 
 .site-header.site-header-nav-scrolled a {

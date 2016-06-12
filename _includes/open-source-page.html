@@ -1,4 +1,4 @@
-{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count')  %}
+
 <div id="container-open-source">
     <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
         <div class="container">
@@ -10,7 +10,7 @@
             </div>
         </div>
     </section>
-
+{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count')  %}
     <section class="container">
         <div class="repo-list row">
             <!-- Check here for github metadata -->
@@ -55,7 +55,7 @@
         // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
 
-        $('.geopattern').each(function(){
+        $('.card-image').each(function(){
             $(this).geopattern($(this).data('pattern-id'));
         });
 

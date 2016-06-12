@@ -5,8 +5,8 @@
 
 /** Header **/
 .site-header{
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     position: fixed;
     margin: 40px 0 30px 0;
@@ -16,7 +16,7 @@
     z-index: 103;
 
     color: #000;
-    background: #fff;
+    background-color: transparent;
 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -35,7 +35,7 @@
 }
 
 .site-header a:hover {
-    color: #4183c4;
+    color: #fff;
 }
 
 #site-header-brand, #site-header-brand .octicon {
@@ -48,7 +48,6 @@
 
 .site-header-nav{
     float:right;
-    margin-bottom: -20px;
 }
 
 .site-header-nav-item {
@@ -56,9 +55,17 @@
     display:inline-block;
     padding:10px;
     margin-left:1.25rem;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bolder;
     font-size: 20px;
-}
 
+}
+.site-header.site-header-nav-scrolled a {
+    color: #fff;
+}
+.site-header.site-header-nav-scrolled a:hover {
+    color: #4183c4;
+}
 /******* Scroll Start *******/
 .site-header {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
@@ -66,7 +73,7 @@
 
 .site-header.site-header-nav-scrolled {
     margin: 0;
-    background-color: white;
+    background-color: black;
 
     -webkit-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
     -moz-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);

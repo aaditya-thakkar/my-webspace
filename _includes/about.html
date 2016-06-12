@@ -1,24 +1,41 @@
 <div class="about row">
 
     <div class="col-md-8">
-
-        <h2>About me</h2>
-
-        <p>BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla BlaBlaBla</p>
-
-        <h2>Contact</h2>
-
-        <ul>
-            <li>Email：<a href="mailto:{{ site.email }}" target="_top">{{ site.email }}</a></li>
-            <li>Website：<a href="{{ site.github_url }}">{{ site.github_url }}</a></li>
-        </ul>
-
-        <h2>Skill Keywords</h2>
-
+        <h2><font face="Comic Sans MS"><b>About me</b></font></h2>
+        <div>
+          <br />
+          <font face="Comic Sans MS"><p class="lead"><b><font size="6">H</font></b>eya! I am Aaditya Thakkar. I am a 3rd year B.Tech(ICT) undergrad student at Dhirubhai Ambani Institute of Information and Communication
+           Technology, India. I like web development and competitive coding. I also like contributing to open-source projects. I also have my projects
+           up on my github page. I am also working as a full stack intern at Appbase.io.</p></font>
+        </div>
+        <br />
+        <hr class="soften"/>
+        <br />
+        <h2><b><font face="Comic Sans MS">Contact</font></b></h2>
+        <div>
+          <br />
+        <a href="https://github.com/aaditya-thakkar" target="_blank">
+          <img src="../assets/images/RoundSocialIcons/PNG/Mono/github@2x.png" />
+        </a>
+        <a href="https://www.facebook.com/aaditya.thakkar.7" target="_blank">
+          <img src="../assets/images/RoundSocialIcons/PNG/Color/facebook@2x.png" />
+        </a>
+        <a href="https://twitter.com/AadiThakkar" target="_blank">
+          <img src="../assets/images/RoundSocialIcons/PNG/Color/twitter@2x.png" />
+        </a>
+        <a href="https://plus.google.com/u/0/+AadityaThakkar/about" target="_blank">
+          <img src="../assets/images/RoundSocialIcons/PNG/Color/google+@2x.png" />
+        </a>
+        </div>
+        <br />
+        <hr class="soften"/>
+        <br />
+        <h2><font face="Comic Sans MS"><b>Skill Sets</b></font></h2>
+        <br />
         {% if site.skill_software_keywords %}
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Software Engineer Keywords</h3>
+                <h3 class="panel-title">Software Engineering skills</h3>
             </div>
             <div class="panel-body">
                 {% for keyword in site.skill_software_keywords %}
@@ -57,7 +74,7 @@
         {% if site.skill_web_keywords %}
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Web Developer Keywords</h3>
+                <h3 class="panel-title">Web Development Skills</h3>
             </div>
             <div class="panel-body">
                 {% for keyword in site.skill_web_keywords %}
@@ -69,8 +86,5 @@
 
     </div>
 
-    <div class="col-md-4">
-        {% include sidebar-popular-repo.html %}
-    </div>
 
 </div>

@@ -1,4 +1,4 @@
-{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse | where: "fork", "false" %}
+{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count')  %}
 <div id="container-open-source">
     <section class="jumbotron geopattern" data-pattern-id="{{ page.title }}">
         <div class="container">

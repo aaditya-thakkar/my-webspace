@@ -2,7 +2,7 @@
 
 .site-header{
     color: #fff;
-    background: #4183c4;
+    background: transparent;
 }
 
 .site-header #site-header-brand {
@@ -10,19 +10,19 @@
 }
 
 .site-header .site-header-nav-item {
-    color: #9acfea;
+    color: #ffffff;
 }
 
 .site-header a:hover {
-    color: #fff;
+    color: #4183c4;
 }
 
 .jumbotron {
-    background: #4183c4;
+    background-image: url("../images/blackorchid/blackorchid/blackorchid.png");
 }
 
 .site-header.site-header-nav-scrolled a {
-    color: #2e2e2e;
+    color: #fff;
 }
 
 .site-header.site-header-nav-scrolled #site-header-brand {

@@ -46,38 +46,38 @@ css: ['index.css', 'sidebar-popular-repo.css']
             Everything I do of interest is kept here, so I can keep track of it all and maybe even inspire someone. so enjoy!
             <br /><br />
             I am very enthusiastic about working with computers and thus, I possess a variety of skills in this area.
-            I enjoy programming very much and my choice of programming languages are C++ and Java, which I have been
-            using since two years. I am also comfortable with other programming languages like Python and C. I am also well
-            experienced with full-stack web development. I have done many open source projects and also contributed to many open source organizations.
-            In addition to all these, I like to travel, read books and watch tv-series and movies a lot. I also write reviews of books I read.
+            I enjoy programming very much and I am also well experienced with full-stack web development. I have done many open source projects and also contributed to many open source organizations.
+            In addition to all these, I like to travel, read books and watch tv-series and movies a lot. I also write reviews of books I read. When I am not brainstorming
+            with my code, I love hanging out with friends.
           </p>
         </font>
-        <!--    <ol class="post-list">
-                {% for post in paginator.posts %}
-                <li class="post-list-item">
-                    <h2 class="post-list-title">
-                        <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                    </h2>
-                    <p class="post-list-description">
-                        {{ post.excerpt | strip_html | strip }}
-                    </p>
-                    <p class="post-list-meta">
-                        <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
-                    </p>
-                </li>
-                {% endfor %}
-            </ol>
-
-             Pagination
+            <!-- Pagination -->
             {% include pagination.html %}
 
-             Comments
+             <!-- Comments -->
             {% include disqus-comments.html %}
-          -->
         </div>
 
         <div class="col-md-4">
-            {% include sidebar-popular-repo.html %}
+          <div class="col-md-3"></div>
+          <div class="col-md-9">
+          <h3><b>Recent Activities</b></h3>
+              <ol class="post-list">
+                  {% for post in paginator.posts %}
+                  <li class="post-list-item">
+                      <h4 class="post-list-title">
+                          <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                      </h4>
+                      <p class="post-list-description">
+                          {{ post.excerpt | strip_html | strip }}
+                      </p>
+                      <p class="post-list-meta">
+                          <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
+                      </p>
+                  </li>
+                  {% endfor %}
+              </ol>
+            </div>
         </div>
 
     </div>
